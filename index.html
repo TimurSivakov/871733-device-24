@@ -20,25 +20,24 @@
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="catalog-all.html">Каталог товаров</a></li>
+          <li><a href="catalog-all.html">Каталог товаров</a>
+            <ul class="catalog-menu-pop-up">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="catalog-menu-pop-up">
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="catalog-menu-pop-up">
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="deliverance.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <section class="modal modal-catalog">
-          <ul class="catalog-menu">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="catalog-menu">
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="catalog-menu">
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </section>
       </nav>
     </header>
 
@@ -64,29 +63,6 @@
           <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
         </div>
         <a class="more-about-us" href="#">Напишите нам</a>
-      </section>
-      <section class="modal modal-big-map">
-        <div class="map">
-          <img src="img/map-big.jpg" alt="Адрес на карте" width="960" height="559">
-        </div>
-      </section>
-      <section class="modal modal-write-us">
-        <form class="write-us-form" action="index.html" method="post">
-          <p>
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" placeholder="Имя Фамилия" id="name">
-          </p>
-          <p>
-            <label for="email">Ваш e-mail</label>
-            <input type="text" name="email" placeholder="email@example.com" id="email">
-          </p>
-          <p>
-            <label for="text">Текст письма</label>
-            <textarea name="white-us-text" rows="6" id="text"></textarea>
-          </p>
-          <!-- <button type="submit" name="button">Отправить</button> -->
-          <input type="submit" name="button" value="отправить">
-        </form>
       </section>
     </main>
 
@@ -118,5 +94,26 @@
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </footer>
+
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail</label>
+        <input type="text" name="email" placeholder="email@example.com" id="email">
+      </p>
+      <p>
+        <label for="text">Текст письма</label>
+        <textarea name="white-us-text" rows="6" id="text"></textarea>
+      </p>
+        <button type="submit" name="button">Отправить</button>
+    </form>
+    <section class="modal modal-big-map">
+      <h2 class="visually-hidden">Адрес на большой карте</h2>
+      <img src="img/map-big.jpg" alt="Адрес на карте" width="960" height="559">
+    </section>
+
   </body>
 </html>
