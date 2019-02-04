@@ -26,6 +26,20 @@
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        <section class="modal modal-catalog">
+          <ul class="catalog-menu">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="catalog-menu">
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+          </ul>
+          <ul class="catalog-menu">
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </section>
       </nav>
     </header>
 
@@ -40,6 +54,44 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
+        <form class="filter" action="index.html" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input type="checkbox" name="color" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="color" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="color" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="color" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="color" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <p>
+              <label for="yes">Есть</label>
+              <input type="radio" name="bluetooth" checked id="yes">
+            </p>
+            <p>
+              <label for="no">Нет</label>
+              <input type="radio" name="bluetooth" id="no">
+            </p>
+          </fieldset>
+        </form>
         <a class="more-about-us" href="#">Показать</a>
       </section>
       <section class="catalog">
