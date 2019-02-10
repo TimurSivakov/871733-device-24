@@ -7,6 +7,15 @@
 
 }
 
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   margin: 0;
 
@@ -16,6 +25,58 @@ body {
 
   background-color: #ffffff;
 }
+
+.page-title {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+.filter fieldset {
+  border-style: none;
+}
+
+.filter legend {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter input:disabled + label {
+  color: #a6a6a6;
+}
+
+.catalog ul {
+  list-style: none;
+  line-height: 24px;
+}
+
+.catalog a {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-family: "gilroylight", 'Arial', sans-serif;
+}
+
 
 .user-navigation a:hover,
 .user-navigation a:focus,
