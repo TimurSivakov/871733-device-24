@@ -6,3 +6,109 @@
     font-style: normal;
 
 }
+
+body {
+  margin: 0;
+
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-logo:hover {
+  opacity: 0.6;
+}
+
+.user-navigation a:active,
+.site-navigation a:active,
+.site-logo:active {
+  opacity: 0.3;
+}
+
+.main-header {
+  background-color: #F0C52E;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-menu-pop-up {
+  display: none;
+}
+
+.site-navigation a {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.search a {
+  opacity: 0.3;
+}
+
+.about-us h2,
+.contacts h2 {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.about-us ul {
+  font-size: 16px;
+  line-height: 40px;
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+}
+
+.more-about-us  {
+  font-family: "gilroyextrabold", 'Arial', sans-serif;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #464646;
+  list-style: none;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-footer .user-navigation {
+  opacity: 0.7;
+}
+
+.address {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.secondary-navigation ul {
+  list-style: none;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.write-us-form {
+  display: none;
+}
+
+.modal {
+  display: none;
+}
