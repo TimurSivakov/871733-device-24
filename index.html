@@ -46,55 +46,69 @@
     <!-- Главный блок -->
     <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-      <section class="about-us">
-        <h2>О&nbsp;нас</h2>
-        <p>Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
-        <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="more-about-us" href="#">Подробнее о&nbsp;нас</a>
-      </section>
+      <div class="main-container-wrapper">
+        <section class="about-us">
+          <h2>О&nbsp;нас</h2>
+          <p>Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
+          <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="more-about-us" href="#">Подробнее о&nbsp;нас</a>
+        </section>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map">
-          <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
-        </div>
-        <a class="more-about-us" href="#">Напишите нам</a>
-      </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <div class="map">
+            <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
+          </div>
+          <a class="more-about-us" href="#">Напишите нам</a>
+        </section>
+      </div>
+
     </main>
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <nav class="secondary-navigation">
-        <a class="site-logo">
-          <img src="img/logo-yellow.svg" alt="Логотип «Девайс»" width="164" height="36">
-        </a>
-        <ul class="user-navigation list-style">
-          <li class="login-link"><a href="#">Войти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="cart"><a href="#">Корзина</a></li>
-        </ul>
-        <ul class="site-navigation list-style">
-          <li><a href="deliverance.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <address class="address">
-        г.Москва, ул. Строителей, 15
-        <a href="tel:+74954959595">+7(495)495-95-95</a>
-      </address>
-        <ul class="footer-social list-style">
-          <li><a class="social-image" href="#">Фейсбук</a></li>
-          <li><a class="social-image" href="#">Инстаграм</a></li>
-          <li><a class="social-image" href="#">Твиттер</a></li>
-        </ul>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      <div class="footer-wrapper">
+        <nav class="secondary-navigation">
+          <div class="user-navigation-flex">
+            <a class="site-logo">
+              <img src="img/logo-yellow.svg" alt="Логотип «Девайс»" width="164" height="36">
+            </a>
+            <ul class="user-navigation list-style">
+              <li class="login-link"><a href="#">Войти</a></li>
+              <li class="compare"><a href="#">Сравнить</a></li>
+              <li class="cart"><a href="#">Корзина</a></li>
+            </ul>
+          </div>
+          <div class="site-navigation-flex">
+            <ul class="site-navigation list-style">
+              <li><a href="deliverance.html">Доставка</a></li>
+              <li><a href="warranty.html">Гарантия</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <address class="address">
+              <span>г.Москва, ул. Строителей, 15</span>
+            </address>
+            <address class="address phone">
+              <a href="tel:+74954959595">+7(495)495-95-95</a>
+            </address>
+            </div>
+          </nav>
+          <div class="footer-social-flex">
+            <img src="img/yellow-line.svg" width="80" height="7" alt="просто желтая линия">
+            <ul class="footer-social list-style">
+              <li><a class="social-image" href="#"><img src="img/fb.svg" alt="Ссылка на паблик в Фейсбуке"></a></li>
+              <li><a class="social-image" href="#"><img src="img/instagram.svg" alt="Ссылка на паблик в Инстаграме"></a></li>
+              <li><a class="social-image" href="#"><img src="img/twitter.svg" alt="Ссылка на паблик в Твиттере"></a></li>              
+            </ul>
+            <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Сссылка на страницу интенсивов"></a>
+          </div>
+      </div>
     </footer>
 
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">

@@ -28,11 +28,9 @@
 
 body {
   margin: 0;
-
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 30px;
-
   background-color: #ffffff;
 }
 
@@ -104,11 +102,55 @@ body {
 
 .main-header {
   background-color: #F0C52E;
+  width: 1160px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.main-navigation {
+  padding: 50px 60px;
+}
+
+.main-header .user-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+  margin-right: auto;
+}
+
+.main-navigation .login-link {
+  margin-right: 200px;
+}
+
+.main-navigation .compare {
+  padding-right: 20px;
 }
 
 .main-navigation a {
   color: #000000;
   text-decoration: none;
+}
+
+.main-header .site-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-navigation .site-navigation {
+  padding-top: 40px;
+}
+
+.main-navigation .site-navigation li:not(:last-child) {
+  padding-right: 40px;
+}
+
+.main-navigation .site-navigation li:first-child {
+  margin-right: auto;
+}
+
+.main-navigation .site-navigation li:nth-child(3) {
+  margin-right: 100px;
 }
 
 .catalog-menu-pop-up {
@@ -149,6 +191,25 @@ body {
   color: #000000;
 }
 
+.container {
+  width: 1160px;
+  margin: 0px auto 90px auto;
+}
+
+.main-container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px
+}
+
+.about-us {
+  width: 460px;
+}
+
+.contacts {
+  width: 560px;
+}
+
 .main-footer {
   background-color: #464646;
   list-style: none;
@@ -183,4 +244,55 @@ body {
 
 .modal {
   display: none;
+}
+
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.secondary-navigation {
+  padding-top: 65px;
+}
+
+.user-navigation-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.main-footer .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.site-navigation-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.site-navigation-flex ul {
+  order: 1;
+  display: flex;
+  width: 440px;
+  justify-content: space-around;
+}
+.phone {
+  order: 2;
+}
+
+.footer-social-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.footer-social-flex ul {
+  display: flex;
+  width: 160px;
+  justify-content: space-around;
 }
