@@ -45,12 +45,16 @@ body {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs a,
 .breadcrumbs-current {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
+  padding-right: 40px;
 }
 
 .filter ul {
@@ -84,9 +88,19 @@ body {
   color: #000000;
 }
 
+.catalog-item {
+  width: 360px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
 .catalog-item-price {
   font-family: "Gilroy", 'Arial', sans-serif;
   font-weight: 300;
+}
+
+.catalog-item-image {
+  margin: 0;
 }
 
 .behavior a:hover,
@@ -268,6 +282,10 @@ body {
   width: 300px;
 }
 
+.main-footer .user-navigation-catalog {
+  width: 400px;
+}
+
 .site-navigation-flex {
   display: flex;
   justify-content: space-between;
@@ -295,4 +313,61 @@ body {
   display: flex;
   width: 160px;
   justify-content: space-around;
+}
+
+.login-id {
+  margin-right: 20px;
+}
+
+
+.main-navigation .logged-in {
+  margin-right: 60px;
+}
+
+.main-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 0 auto;
+}
+
+.filters {
+  width: 30%;
+  background-color: #eeeeee;
+
+}
+
+.catalog {
+  width: 70%;
+}
+
+.main-heading {
+  width: 1100px;
+  margin: 44px auto 0px auto;
+  padding-left: 60px;
+}
+
+
+.breadcrumbs {
+  display: flex;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+  margin-left: 70px;
+
+}
+
+.catalog-item-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.catalog-item-description {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
