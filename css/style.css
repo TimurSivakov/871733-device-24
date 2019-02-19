@@ -326,18 +326,20 @@ body {
 
 .main-wrapper {
   display: flex;
-  /* flex-direction: column; */
+  width: 1160px;
   margin: 0 auto;
+  justify-content: space-between;
+
 }
 
 .filters {
-  width: 30%;
+  width: 330px;
   background-color: #eeeeee;
 
 }
 
 .catalog {
-  width: 70%;
+  width: 830px;
 }
 
 .main-heading {
@@ -353,11 +355,15 @@ body {
 
 .catalog-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding:0;
-  margin-left: 70px;
+  margin-left: 30px;
+}
 
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .catalog-item-flex {
