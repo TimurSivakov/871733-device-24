@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 
@@ -9,21 +9,20 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
 }
 
-/* open-sans-300 - cyrillic */
 @font-face {
   font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'),
-       url('../fonts/open-sans-v15-cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/open-sans-v15-cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
@@ -118,16 +117,18 @@ body {
 }
 
 .main-header {
-  background-color: #F0C52E;
-  width: 1160px;
+
+  width: 1200px;
   margin: 40px auto;
-  height: 300px;
-  /* padding-top: 40px; */
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-navigation {
   padding: 0 60px;
-
+  background-color: #F0C52E;
+  padding-bottom: 170px;
 }
 
 .site-logo {
@@ -176,14 +177,6 @@ body {
   padding-top: 40px;
 }
 
-/* .main-navigation .site-navigation li:not(:last-child) {
-  padding-right: 40px;
-}
-
-.main-navigation .site-navigation li:first-child {
-  margin-right: auto;
-} */
-
 .main-navigation .site-navigation li:nth-child(2) {
   margin-right: auto;
   padding-left: 40px;
@@ -202,8 +195,8 @@ body {
   letter-spacing: 0.2em;
 }
 
-.search a {
-  opacity: 0.3;
+.search-input {
+  background-color: yellow;
 }
 
 .about-us h2,
@@ -231,18 +224,22 @@ body {
 }
 
 .container {
-  width: 1160px;
-  margin: 0px auto 90px auto;
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 20px
 }
 
 .main-container-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .about-us {
-  width: 460px;
+  width: 475px;
 }
 
 .contacts {
@@ -285,16 +282,18 @@ body {
   display: none;
 }
 
-.footer-wrapper {
-  width: 1160px;
+/* .footer-wrapper {
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-}
-.secondary-navigation {
+  padding: 0 20px;
+} */
+
+.added {
   padding-top: 65px;
+  padding-bottom: 70px;
 }
 
-.user-navigation-flex {
+.navigation-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -331,7 +330,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 70px;
 }
 
 .footer-social-flex ul {

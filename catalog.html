@@ -10,16 +10,19 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="site-logo">
+        <a class="site-logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип «Девайс»" width="164" height="36">
         </a>
         <div class="navigation">
           <ul class="user-navigation list-style behavior">
-            <li class="search"><a href="#">Поиск по&nbsp;сайту</a></li>
-            <!-- Потом будет формой? -->
+            <form class="search" action="index.html" method="post">
+              <input class="search-input" type="text" name="" placeholder="поиск по сайту">
+              <button type="button" name="button"></button>
+            </form>
+
           </ul>
           <ul class="user-navigation list-style behavior">
-              <li class="login-id"><a href="#">Валентин Петухов</a></li>
+            <li class="login-id"><a href="#">Валентин Петухов</a></li>
             <li class="login-link logged-in"><a href="#">Выйти</a></li>
             <li class="compare"><a href="#">Сравнить</a></li>
             <li class="cart"><a href="#">Корзина</a></li>
@@ -28,18 +31,20 @@
         <div class="navigation">
         <ul class="site-navigation list-style behavior">
           <li><a href="catalog-all.html">Каталог товаров</a>
-            <ul class="catalog-menu-pop-up list-style">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul class="catalog-menu-pop-up list-style">
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-            <ul class="catalog-menu-pop-up list-style">
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
+              <div class="pop-up">
+              <ul class="catalog-menu-pop-up list-style">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="catalog-menu-pop-up list-style">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="catalog-menu-pop-up list-style">
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
         <ul class="site-navigation list-style behavior">
@@ -188,10 +193,10 @@
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <div class="footer-wrapper">
+      <div class="container added">
         <nav class="secondary-navigation">
-          <div class="user-navigation-flex">
-            <a class="site-logo">
+          <div class="navigation-row">
+            <a class="site-logo" href="index.html">
               <img src="img/logo-yellow.svg" alt="Логотип «Девайс»" width="164" height="47">
             </a>
             <ul class="user-navigation user-navigation-catalog list-style">
