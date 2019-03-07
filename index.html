@@ -11,12 +11,17 @@
     <!-- Шапка сайта -->
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="site-logo">
+        <a class="site-logo logo-top-margin">
           <img src="img/logo.svg" alt="Логотип «Девайс»" width="164" height="36">
         </a>
         <div class="navigation">
           <ul class="user-navigation list-style behavior">
-            <li class="search"><a href="#">Поиск по&nbsp;сайту</a></li>
+            <li>
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" required>
+                <button type="submit" class="search-button"><span>Найти</span></button>
+              </form>
+            </li>
             <!-- Потом будет формой? -->
           </ul>
           <ul class="user-navigation list-style behavior">
@@ -100,12 +105,11 @@
               <span>г.Москва, ул. Строителей, 15</span>
             </address>
             <address class="address phone">
-              <a href="tel:+74954959595">+7(495)495-95-95</a>
+              <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
             </address>
             </div>
           </nav>
           <div class="footer-social-flex">
-            <img src="img/yellow-line.svg" width="80" height="7" alt="просто желтая линия">
             <ul class="footer-social list-style">
               <li><a class="social-image" href="#"><img src="img/fb.svg" alt="Ссылка на паблик в Фейсбуке"></a></li>
               <li><a class="social-image" href="#"><img src="img/instagram.svg" alt="Ссылка на паблик в Инстаграме"></a></li>
