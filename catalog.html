@@ -15,10 +15,13 @@
         </a>
         <div class="navigation">
           <ul class="user-navigation list-style behavior">
-            <form class="search" action="index.html" method="post">
-              <input class="search-input" type="text" name="" placeholder="поиск по сайту">
-              <button type="button" name="button"></button>
-            </form>
+            <li>
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" required>
+                <button type="submit" class="search-button"><span>Найти</span></button>
+              </form>
+            </li>
+            <!-- Потом будет формой? -->
           </ul>
           <ul class="user-navigation list-style behavior">
             <li class="login-id"><a href="#">Валентин Петухов</a></li>
@@ -83,44 +86,49 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <!-- Здесь будет формаy -->
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
-                <legend>Цвет</legend>
-                <ul class="filter-list list-style">
-                  <li class="filter-option">
-                    <input type="checkbox" name="color" id="black" checked>
-                    <label for="black">Черный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" name="color" id="white">
-                    <label for="white">Белый</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" name="color" id="blue" checked>
-                    <label for="blue">Синий</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" name="color" id="red" checked>
-                    <label for="red">Красный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" name="color" id="pink">
-                    <label for="pink">Розовый</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset>
-                <legend>Bluetooth</legend>
-                <p>
-                  <input type="radio" name="bluetooth" checked id="yes">
-                  <label for="yes">Есть</label>
-                </p>
-                <p>
-                  <input type="radio" name="bluetooth" id="no">
-                  <label for="no">Нет</label>
-                </p>
-              </fieldset>
+              <div class="fieldset-border">
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <ul class="filter-list list-style">
+                    <li class="filter-option">
+                      <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
+                      <label for="black">Черный</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden" type="checkbox" name="white" id="white">
+                      <label for="white">Белый</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
+                      <label for="blue">Синий</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
+                      <label for="red">Красный</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                      <label for="pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="fieldset-border">
+                <fieldset>
+                  <legend>Bluetooth</legend>
+                  <p>
+                    <input type="radio" name="bluetooth" value="yes" checked id="yes">
+                    <label for="yes">Есть</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="bluetooth" value="no" id="no">
+                    <label for="no">Нет</label>
+                  </p>
+                </fieldset>
+              </div>
+              <button type="submit" class="filter-button yellow-buttons yellow-buttons-catalog">Показать</button>
             </form>
-            <a class="more-about-us" href="#">Показать</a>
+
           </section>
           <section class="catalog">
             <!-- <h2 class="visually-hidden">Список моноподов для селфи</h2> -->

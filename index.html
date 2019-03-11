@@ -68,7 +68,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="more-about-us" href="#">Подробнее о&nbsp;нас</a>
+        <div class="yellow-container">
+          <a class="more-about-us yellow-buttons yellow-buttons-main" href="#"><span>Подробнее о&nbsp;нас</span></a>
+        </div>
       </section>
 
       <section class="contacts">
@@ -77,7 +79,9 @@
         <div class="map">
           <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
         </div>
-        <a class="more-about-us" href="#">Напишите нам</a>
+        <div class="yellow-container">
+          <a class="more-about-us yellow-buttons yellow-buttons-main" href="#"><span>Напишите нам</span></a>
+        </div>
       </section>
     </main>
 
@@ -121,19 +125,22 @@
     </footer>
 
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="name">
-      </p>
-      <p>
-        <label for="email">Ваш e-mail</label>
-        <input type="text" name="email" placeholder="email@example.com" id="email">
-      </p>
-      <p>
-        <label for="text">Текст письма</label>
-        <textarea name="white-us-text" rows="6" id="text"></textarea>
-      </p>
-      <button type="submit" name="button">Отправить</button>
+      <div class="write-us-form-container">
+        <p class="write-us-form-item">
+          <label for="name">Ваше имя:</label><br>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+        </p>
+        <p class="write-us-form-item">
+          <label for="email">Ваш e-mail</label><br>
+          <input type="text" name="email" placeholder="email@example.com" id="email">
+        </p>
+        <p class="write-us-form-item grow">
+          <label for="text">Текст письма</label><br>
+          <textarea name="white-us-text" placeholder="В свободной форме" rows="6" id="text"></textarea>
+        </p>
+        <a href="#" class="close-button"></a>
+        <button type="submit">Отправить</button>
+      </div>
     </form>
     <div class="modal modal-big-map">
       <img src="img/map-big.jpg" alt="Адрес на карте" width="960" height="559">
