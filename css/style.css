@@ -30,6 +30,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
+  color: #000000;
   line-height: 30px;
   background-color: #ffffff;
 }
@@ -147,6 +148,25 @@ input[type="radio"]:checked + label::before {
   border: 0;
 }
 
+input[type="checkbox"]:checked + label:hover::before,
+input[type="radio"]:checked + label:hover::before,
+input[type="checkbox"] + label:hover::before,
+input[type="radio"] + label:hover::before {
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:checked + label:active::before,
+input[type="checkbox"] + label:active::before,
+input[type="radio"]:checked + label:active::before,
+input[type="radio"] + label:active::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="radio"]:disabled + label::before {
+  opacity: 0.25;
+}
+
 .catalog ul {
   line-height: 24px;
 }
@@ -159,22 +179,9 @@ input[type="radio"]:checked + label::before {
   color: #000000;
 }
 
-/* .catalog-item {
-  width: 360px;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  margin: auto;
-} */
-
-/* .catalog-item-price {
-  font-family: "Gilroy", 'Arial', sans-serif;
-  font-weight: 300;
-} */
-
 .catalog-item-image {
   margin: 0;
 }
-
 
 .behavior a:hover,
 .behavior a:focus,
@@ -182,7 +189,7 @@ input[type="radio"]:checked + label::before {
 .search-input:hover,
 .sort-items a:hover,
 .breadcrumbs a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.3;
 }
 
 .behavior a:active,
@@ -207,7 +214,6 @@ input[type="radio"]:checked + label::before {
   padding: 0 60px;
   background-color: #f7e296;
   padding-bottom: 130px;
-
 }
 
 .logo-top-margin {
@@ -265,7 +271,6 @@ padding-top: 1px;
   letter-spacing: 0.2em;
 }
 
-
 .catalog-menu-pop-up:first-child {
   width: 240px;
 }
@@ -293,7 +298,6 @@ padding-top: 1px;
 
 .catalog-pop-up:hover .pop-up-container {
   display: flex;
-
 }
 
 .catalog-pop-up::after {
@@ -867,4 +871,18 @@ margin-left: 500px;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   transform: rotate(-45deg);
+}
+
+.login-link a {
+  position: relative;
+}
+
+.login-link a::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -26px;
+  background-image: url("../img/user.svg");
+  width: 13px;
+  height: 12px;
 }
