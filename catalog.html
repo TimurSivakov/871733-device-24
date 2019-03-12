@@ -31,29 +31,30 @@
           </ul>
         </div>
         <div class="navigation">
-        <ul class="site-navigation list-style behavior">
-          <li><a href="catalog-all.html">Каталог товаров</a>
-              <div class="pop-up">
-              <ul class="catalog-menu-pop-up list-style">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="catalog-menu-pop-up list-style">
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="catalog-menu-pop-up list-style">
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <ul class="site-navigation list-style behavior">
-          <li><a href="deliverance.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+          <ul class="site-navigation list-style behavior">
+          <li class="catalog-pop-up">
+              <a href="catalog-all.html">Каталог товаров</a>
+              <div class="pop-up-container">
+                <ul class="catalog-menu-pop-up list-style">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-menu-pop-up list-style">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-menu-pop-up list-style">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="site-navigation list-style behavior">
+            <li><a href="deliverance.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -72,10 +73,19 @@
       <div class="top-row">
         <div class="wrapper row">
           <div class="filters-header-left">
-            Фильтры
+            <p class="filt filter-font">Фильтр:</p>
           </div>
           <div class="filters-header-right">
-            Сортировка
+            <p class="sort filter-font">Сортировка:</p>
+            <div class="sort-items">
+              <a href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По популярности</a>
+            </div>
+            <div class="sort-arrows">
+              <a class="arrow arrow-up" href="#">по возрастанию</a>
+              <a class="arrow arrow-down" href="#">по убыванию</a>
+            </div>
           </div>
         </div>
       </div>
