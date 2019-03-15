@@ -19,7 +19,7 @@
             <li>
               <form class="search" action="https://echo.htmlacademy.ru" method="post">
                 <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" required>
-                <button type="submit" class="search-button"><span>Найти</span></button>
+                <button type="submit" class="search-button">Найти</button>
               </form>
             </li>
             <!-- Потом будет формой? -->
@@ -37,7 +37,7 @@
               <div class="pop-up-container">
                 <ul class="catalog-menu-pop-up list-style">
                   <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
                 <ul class="catalog-menu-pop-up list-style">
@@ -56,59 +56,50 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
-        <!-- <ul class="catalog-menu-pop-up list-style">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul> -->
-
       </nav>
     </header>
 
     <!-- Главный блок -->
-    <main class="container main-container-wrapper">
+    <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-      <section class="about-us">
-        <h2>О&nbsp;нас</h2>
-        <p>Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
-        <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <div class="yellow-container">
-          <a class="more-about-us yellow-buttons yellow-buttons-main" href="#"><span>Подробнее о&nbsp;нас</span></a>
-        </div>
-      </section>
+      <div class="info-container">
+        <section class="about-us info-section">
+          <h2>О&nbsp;нас</h2>
+          <div class="about-us-wrapper">
+            <p>Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
+            <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
+            <ul>
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+          </div>
+            <a class="more-about-us yellow-button" href="#">Подробнее о&nbsp;нас</a>
+        </section>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map">
-          <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
-        </div>
-        <div class="yellow-container">
-          <a class="more-about-us yellow-buttons yellow-buttons-main" href="#"><span>Напишите нам</span></a>
-        </div>
-      </section>
+        <section class="contacts info-section">
+          <h2>Контакты</h2>
+          <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <div class="map">
+            <img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">
+          </div>
+            <a class="more-about-us yellow-button" href="#">Напишите нам</a>
+        </section>
+      </div>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="main-footer">
-      <div class="container added">
+      <div class="footer-container">
         <nav class="secondary-navigation">
           <div class="navigation-row">
             <a class="site-logo">
               <img src="img/logo-yellow.svg" alt="Логотип «Девайс»" width="164" height="36">
             </a>
             <ul class="user-navigation list-style">
-              <li class="login-link"><a href="#">Войти</a></li>
-              <li class="compare"><a href="#">Сравнить</a></li>
-              <li class="cart"><a href="#">Корзина</a></li>
+              <li class="login-link"><a class="login-link-footer" href="#">Войти</a></li>
+              <li class="compare"><a class="compare-footer" href="#">Сравнить</a></li>
+              <li class="cart"><a class="cart-footer" href="#">Корзина</a></li>
             </ul>
           </div>
           <div class="site-navigation-flex">
@@ -150,8 +141,8 @@
           <label for="text">Текст письма</label><br>
           <textarea name="white-us-text" placeholder="В свободной форме" rows="6" id="text"></textarea>
         </p>
-        <a href="#" class="close-button"></a>
-        <button type="submit">Отправить</button>
+        <button class="close-button" type="button"></button>
+        <button type="submit" class="yellow-button">Отправить</button>
       </div>
     </form>
     <div class="modal modal-big-map">
