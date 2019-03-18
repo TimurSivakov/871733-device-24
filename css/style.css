@@ -307,7 +307,7 @@ input:focus + label {
 .main-header {
   width: 1160px;
   padding: 40px 20px 0px 20px;
-  margin: 0 auto 36px auto;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -423,7 +423,7 @@ input:focus + label {
   display: flex;
   width: 1040px;
   left: -60px;
-  padding: 24px 60px 40px;
+  padding: 24px 60px 27px;
   background-color: #f7e296;
   z-index: 2;
 }
@@ -508,6 +508,7 @@ input:focus + label {
 .info-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 80px;
 }
 
 .visually-hidden {
@@ -760,6 +761,7 @@ margin-left: 500px;
   width: 1100px;
   margin: 0px auto 47px auto;
   padding-left: 80px;
+  padding-top: 37px;
 }
 
 .breadcrumbs {
@@ -1263,4 +1265,290 @@ margin-left: 500px;
   color: rgba(0, 0, 0, 0.2);
   background-color: transparent;
   border: 0;
+}
+
+/* Слайдер */
+
+.slider-container {
+  box-sizing: border-box;
+  height: 490px;
+}
+
+.slider-item {
+  position: relative;
+  width: 560px;
+  z-index: 2;
+}
+
+.slider-card {
+  display: none;
+}
+
+/* .slider-card:nth-child(1) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+} */
+
+.slider-item::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  width: 100px;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-card::after {
+  position: absolute;
+  top: -12px;
+  right: 49px;
+
+  font-family: "Gilroy", 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+.slider-card:nth-child(1)::after {
+  content: "01";
+}
+
+.slider-card:nth-child(2)::after {
+  content: "02";
+}
+
+.slider-card:nth-child(3)::after {
+  content: "03";
+}
+
+.slider {
+  position: relative;
+  background-image: linear-gradient(to bottom, #f7e296 0, #f7e296 112px, #ffffff 112px, #ffffff 100%);
+}
+
+.slider-list,
+.slider-list ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-item h3 {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-top: 80px;
+  font-family: "Gilroy", 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.slider-item p {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.slider-item-options h4 {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.slider-item-options p {
+  font-family: "Gilroy", 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 7px;
+}
+
+.slider-controls {
+  position: absolute;
+  right: 77px;
+  bottom: 132px;
+  z-index: 100;
+  font-size: 0;
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px 9px;
+}
+
+.slider-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  margin-left: -6px;
+  margin-top: -6px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #464646;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+#product-1:checked ~ .slider-list .slider-card:nth-child(1) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#product-2:checked ~ .slider-list .slider-card:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#product-3:checked ~ .slider-list .slider-card:nth-child(3) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 2px;
+  height: 2px;
+  margin-top: -2px;
+  margin-left: -2px;
+
+  background-color: inherit;
+  border: 1px solid #464646;
+  border-radius: 50%;
+}
+
+.slider-item-image {
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item .yellow-button {
+  margin-bottom: 47px;
+}
+
+.slider-item .more-about-us {
+  width: 200px;
+}
+
+.slider-item-options {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  max-width: 426px;
+}
+
+ .slider-card:nth-child(3) .slider-item-options {
+   width: 280px;
+ }
+
+.slider-item-options li {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* Слайдер */
+
+/* Ассортимент */
+
+.range-of-items {
+  padding-top: 104px;
+}
+
+.range-of-items-flex {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+
+
+  /* height: 300px; */
+}
+
+.range-item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  max-width: 160px;
+  height: 240px;
+}
+
+.range-item h3 {
+  margin: 0;
+  font-family: "Gilroy", 'Arial', sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  min-height: 48px;
+  font-size: 18px;
+}
+
+.range-item-link {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background: rgba(240, 197, 46, 0.5) no-repeat 50% 50%;
+}
+
+.range-item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.range-item:nth-child(1) > a {
+  background-image: url("../img/popular-1.svg");
+  background-position: 31px 52px;
+}
+.range-item:nth-child(2) > a {
+  background-image: url("../img/popular-2.svg");
+  background-position: 38px 41px;
+}
+.range-item:nth-child(3) > a {
+  background-image: url("../img/popular-3.svg");
+  background-position: 49px 38px;
+}
+.range-item:nth-child(4) > a {
+  background-image: url("../img/popular-4.svg");
+  background-position: 28px 49px;
+}
+.range-item:nth-child(5) > a {
+  background-image: url("../img/popular-5.svg");
+  background-position: 55px 32px;
+}
+.range-item:nth-child(6) > a {
+  background-image: url("../img/popular-6.svg");
+  background-position: 13px 49px;
+}
+
+.range-item-link:hover,
+.range-item h3:hover + .range-item-link {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.range-item-link:active,
+.range-item h3:active + .range-item-link {
+  opacity: 0.3;
 }
