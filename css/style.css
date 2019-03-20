@@ -166,16 +166,12 @@ input[type="radio"]:checked + label::before {
   border: 0;
 }
 
-input[type="checkbox"]:checked + label:hover::before,
-input[type="radio"]:checked + label:hover::before,
 input[type="checkbox"] + label:hover::before,
 input[type="radio"] + label:hover::before {
   opacity: 0.6;
 }
 
-input[type="checkbox"]:checked + label:active::before,
 input[type="checkbox"] + label:active::before,
-input[type="radio"]:checked + label:active::before,
 input[type="radio"] + label:active::before {
   opacity: 1;
 }
@@ -186,7 +182,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 input:focus + label {
-  outline: 2px solid #f0c52e;
+  outline: 2px solid rgb(125, 173, 217);
 }
 
 .catalog-item-flex {
@@ -209,7 +205,7 @@ input:focus + label {
   position: relative;
 }
 
-.catalog-item-image img:hover {
+.catalog-item-image:hover img {
   opacity: 0.7;
 }
 
@@ -265,8 +261,12 @@ input:focus + label {
   z-index: 2;
 }
 
-.add-for-comparing:hover {
+.catalog-item-image .add-for-comparing:hover {
   color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-image .add-for-comparing:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .behavior a:hover,
