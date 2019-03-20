@@ -1499,7 +1499,7 @@ margin-left: 500px;
 
 .range-of-items {
   padding-top: 104px;
-  margin-bottom: 82px;
+  margin-bottom: 182px;
 }
 
 .range-of-items-flex {
@@ -1619,10 +1619,8 @@ margin-left: 500px;
 /* Нижний слайдер */
 
 .advantages-slider {
-  width: initial;
-  width: 100%;
-  background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 100px, #e5e5e5 100px, #e5e5e5 100%);
   margin-bottom: 95px;
+  background-color: #e5e5e5;
 }
 
 .advantages-slider-list {
@@ -1635,27 +1633,38 @@ margin-left: 500px;
 .advantages-slider-item {
   display: none;
   position: relative;
+  margin-top: -27px;
 }
 
 .advantages-slider-container {
   display: flex;
-  padding-top: 74px;
-  padding-bottom: 127px;
+  align-items: flex-start;
+  padding-bottom: 129px;
 }
 
 .advantages-slider-controls {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 400px;
   justify-content: space-around;
+  width: 400px;
+  padding: 0;
+  /* padding-top: 7px; */
+  margin: 0;
+  margin-top: -32px;
+  list-style: none;
+}
+
+.advantages-slider-controls  .yellow-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .advantages-slider-controls::after {
   content: "";
   position: absolute;
   right: 116px;
-  top: -73px;
+  top: -68px;
   width: 7px;
   height: 319px;
   background-color: black;
@@ -1663,7 +1672,12 @@ margin-left: 500px;
 
 .advantages-slider-controls label {
   text-align: center;
+  line-height: 24px;
   width: 140px;
+}
+
+.advantages-slider-controls li {
+  margin: 12px 0px;
 }
 
 .advantages-slider-item h2 {
@@ -1698,11 +1712,7 @@ margin-left: 500px;
 #credit:checked ~ .advantages-slider-controls .slider-controls-item--3 {
   background-color: rgba(0, 0, 0, 1);
   color: #f7e184;
-  padding: 5px 128px 5px 10px;
-}
-
-.slider-controls-item--2 {
-  margin-top: 6px;
+  padding: 8px 128px 8px 11px;
 }
 
 .advantages-slider-item::after {
