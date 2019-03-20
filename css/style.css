@@ -1376,9 +1376,9 @@ margin-left: 500px;
   margin: 0;
   margin-bottom: 40px;
 }
-
-.slider-item-options h4 {
+.slider-item-options .option-heading {
   font-size: 13px;
+  font-family: "Open Sans", 'Arial', sans-serif;
   line-height: 20px;
   margin: 0;
 }
