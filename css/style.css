@@ -1360,7 +1360,7 @@ margin-left: 500px;
   list-style: none;
 }
 
-.slider-item h3 {
+.slider-item .slider-item-heading {
   max-width: 500px;
   margin: 0;
   margin-bottom: 19px;
@@ -1376,6 +1376,7 @@ margin-left: 500px;
   margin: 0;
   margin-bottom: 40px;
 }
+
 .slider-item-options .option-heading {
   font-size: 13px;
   font-family: "Open Sans", 'Arial', sans-serif;
