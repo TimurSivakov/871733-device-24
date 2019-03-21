@@ -103,6 +103,7 @@ img {
 .filter label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin-left: 40px;
 }
 
@@ -703,7 +704,7 @@ input[type="checkbox"]:focus + label {
 }
 
 .write-us-form-item label {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -812,14 +813,14 @@ margin-left: 500px;
 }
 
 .catalog-item-description h3 {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800px;
   font-size: 18px;
   width: 260px;
 }
 
 .catalog-item-price {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 300px;
   font-size: 16px;
 }
@@ -949,7 +950,7 @@ margin-left: 500px;
   border: 0;
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   width: 200px;
@@ -993,11 +994,12 @@ margin-left: 500px;
 
 .sort {
   display: inline-block;
+  vertical-align: middle;
   width: 160px;
 }
 
 .filter-font {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   line-height: 24px;
   font-size: 16px;
@@ -1040,6 +1042,7 @@ margin-left: 500px;
 
 .arrow {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   font-size: 0;
   margin-right: 8px;
@@ -1058,17 +1061,16 @@ margin-left: 500px;
   border-left-width: 6px;
   border-right-color: transparent;
   border-left-color: transparent;
-  display: inline-block;
 }
 
 .arrow-up::before {
   border-top-width: 0px;
-  top: 5px;
+  top: 11px;
 }
 
 .arrow-down::before {
   border-bottom-width: 0px;
-  top: 5px;
+  top: 11px;
   right: 0px;
 }
 
@@ -1177,7 +1179,7 @@ margin-left: 500px;
 
 .pagination a {
   min-width: 20px;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   text-align: center;
@@ -1225,7 +1227,7 @@ margin-left: 500px;
 /* Пагинация */
 
 .filter-item {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -1295,7 +1297,7 @@ margin-left: 500px;
 
 .price-controls input {
   width: 40px;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   text-align: left;
@@ -1335,7 +1337,7 @@ margin-left: 500px;
   top: -12px;
   right: 49px;
 
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 179.2px;
   line-height: 179.2px;
@@ -1373,7 +1375,7 @@ margin-left: 500px;
   margin: 0;
   margin-bottom: 19px;
   padding-top: 81px;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
@@ -1387,13 +1389,13 @@ margin-left: 500px;
 
 .slider-item-options .option-heading {
   font-size: 13px;
-  font-family: "Open Sans", 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 20px;
   margin: 0;
 }
 
 .slider-item-options p {
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
@@ -1403,7 +1405,7 @@ margin-left: 500px;
 .slider-controls {
   position: absolute;
   right: 70px;
-  bottom: 129px;
+  bottom: 134px;
   z-index: 10;
   font-size: 0;
 }
@@ -1411,6 +1413,7 @@ margin-left: 500px;
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1526,7 +1529,7 @@ margin-left: 500px;
 
 .range-item-heading {
   margin: 0;
-  font-family: "Gilroy", 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   line-height: 24px;
   font-size: 18px;
@@ -1600,7 +1603,7 @@ margin-left: 500px;
 }
 
 .our-partners {
-  margin-bottom: 65px;
+  margin-bottom: 71px;
 }
 
 .partners-flex {
@@ -1615,6 +1618,7 @@ margin-left: 500px;
   width: 260px;
   height: 100px;
   display: inline-block;
+  vertical-align: top;
   font-size: 0;
 }
 
