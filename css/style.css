@@ -28,13 +28,9 @@
 @keyframes animate {
   0% {
     transform: translateX(-10%);
-  };
-
-  100% {
+  };100% {
     transform: translateX(110%);
-  }
-}
-
+  }}
 body {
   margin: 0;
   padding: 0;
@@ -856,14 +852,14 @@ margin-left: 500px;
 
 .catalog-item-description h3 {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800px;
+  font-weight: 800;
   font-size: 18px;
   width: 260px;
 }
 
 .catalog-item-price {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -1519,12 +1515,10 @@ margin-left: 500px;
   left: 50%;
   top: 50%;
   z-index: 2;
-
   width: 2px;
   height: 2px;
   margin-top: -2px;
   margin-left: -3px;
-
   background-color: inherit;
   border: 1px solid #464646;
   border-radius: 50%;
@@ -1536,7 +1530,6 @@ margin-left: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .slider-item .yellow-button {
