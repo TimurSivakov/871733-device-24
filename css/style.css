@@ -27,14 +27,14 @@
 
 @-webkit-keyframes animate {
   0% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     opacity: 0;
   }
 
 100% {
-    -webkit-transform: translateY(110%);
-            transform: translateY(110%);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
