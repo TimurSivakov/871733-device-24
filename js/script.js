@@ -1,6 +1,6 @@
   var link = document.querySelector(".write-us-link");
   var popup = document.querySelector(".write-us-form");
-  var close = document.querySelector(".close-button");  
+  var close = document.querySelector(".close-button");
   var login = popup.querySelector("[name=full-name]");
   var email = popup.querySelector("[name=email]");
   var isStorageSupport = true;
