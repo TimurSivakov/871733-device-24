@@ -1,7 +1,6 @@
   var link = document.querySelector(".write-us-link");
   var popup = document.querySelector(".write-us-form");
-  var close = document.querySelector(".close-button");
-  var form = popup.querySelector("form");
+  var close = document.querySelector(".close-button");  
   var login = popup.querySelector("[name=full-name]");
   var email = popup.querySelector("[name=email]");
   var isStorageSupport = true;
@@ -29,7 +28,7 @@
     popup.classList.remove("modal-show");
   });
 
-  form.addEventListener("submit", function (evt) {
+  popup.addEventListener("submit", function (evt) {
     if (!login.value || !email.value) {
       evt.preventDefault();
       console.log("Необходимо ввести имя и электронную почту");
@@ -41,7 +40,7 @@
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (popup.classList.contains("modal-show")) {
-         evt.preventDefault();
+
          popup.classList.remove("modal-show");
       }
     }
@@ -62,7 +61,7 @@
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
+
     if (evt.keyCode === 27) {
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
