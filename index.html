@@ -235,8 +235,6 @@
           <section class="contacts info-section">
             <h2>Контакты</h2>
             <p>Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-
-            <!-- кнопки для javascript -->
             <div class="map">
               <a href="big-map.html" class="big-map-js"><img src="img/map.jpg" alt="Адрес на карте" width="560" height="222">Увеличить карту с адресом</a>
             </div>
@@ -284,30 +282,31 @@
           </div>
       </div>
     </footer>
-      <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="write-us-form-container">
-          <p class="write-us-form-item">
-            <label for="full-name">Ваше имя:</label><br>
-            <input type="text" name="full-name" placeholder="Имя Фамилия" id="full-name" required>
-          </p>
-          <p class="write-us-form-item">
-            <label for="email">Ваш e-mail</label><br>
-            <input type="text" name="email" placeholder="email@example.com" id="email" required>
-          </p>
-          <p class="write-us-form-item grow">
-            <label for="text">Текст письма</label><br>
-            <textarea name="white-us-text" placeholder="В свободной форме" rows="6" id="text"></textarea>
-          </p>
-          <button class="close-button" type="button"></button>
-          <button type="submit" class="yellow-button">Отправить</button>
-        </div>
-      </form>
 
+    <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="write-us-form-container">
+        <p class="write-us-form-item">
+          <label for="full-name">Ваше имя:</label><br>
+          <input type="text" name="full-name" placeholder="Имя Фамилия" id="full-name" required>
+        </p>
+        <p class="write-us-form-item">
+          <label for="email">Ваш e-mail</label><br>
+          <input type="text" name="email" placeholder="email@example.com" id="email" required>
+        </p>
+        <p class="write-us-form-item grow">
+          <label for="text">Текст письма</label><br>
+          <textarea name="white-us-text" placeholder="В свободной форме" rows="6" id="text"></textarea>
+        </p>
+        <button class="close-button" type="button"></button>
+        <button type="submit" class="yellow-button">Отправить</button>
+      </div>
+    </form>
     <div class="modal big-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.7730923632944!2d37.525248474622984!3d55.68710295928225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1553247876348" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p><img src="img/map-big.jpg" alt="Адрес на карте" width="960" height="559"></p>
       <button class="close-button" type="button"></button>
     </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

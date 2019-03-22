@@ -653,7 +653,7 @@ input[type="radio"]:focus + label {
   border: none;
 }
 
-.modal p {
+.big-map p {
   position: absolute;
   top: 0;
   left: 0;
@@ -1188,7 +1188,6 @@ margin-left: 500px;
   width: 19px;
   height: 15px;
   background-repeat: no-repeat;
-  /* background-position: 50% 50%; */
 }
 
 .enter::before {
@@ -1228,7 +1227,6 @@ margin-left: 500px;
   margin-bottom: 77px;
   padding: 0;
   list-style: none;
-
   background-color: #ebebeb;
 }
 
@@ -1394,7 +1392,6 @@ margin-left: 500px;
   position: absolute;
   top: -12px;
   right: 49px;
-
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 179.2px;
@@ -1424,7 +1421,6 @@ margin-left: 500px;
 .slider-list ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1484,7 +1480,6 @@ margin-left: 500px;
 
 .slider-controls label::after {
   content: "";
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1797,15 +1792,17 @@ margin-left: 500px;
 #delivery:checked ~ .advantages-slider-controls .slider-controls-item--1::before,
 #warranty:checked ~ .advantages-slider-controls .slider-controls-item--2::before,
 #credit:checked ~ .advantages-slider-controls .slider-controls-item--3::before {
-  display: none;
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 #delivery:checked ~ .advantages-slider-controls .slider-controls-item--1,
 #warranty:checked ~ .advantages-slider-controls .slider-controls-item--2,
 #credit:checked ~ .advantages-slider-controls .slider-controls-item--3 {
-  background-color: rgba(0, 0, 0, 1);
   color: #f7e184;
   padding: 8px 128px 8px 11px;
+  transition: ease-in;
+  transition-duration: 0.3s;
 }
 
 .advantages-slider-item::after {
