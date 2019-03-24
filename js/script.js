@@ -26,12 +26,15 @@
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
   });
 
   popup.addEventListener("submit", function (evt) {
     if (!login.value || !email.value) {
       evt.preventDefault();
-      console.log("Необходимо ввести имя и электронную почту");
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
     } else {
       localStorage.setItem("login", login.value);
     }

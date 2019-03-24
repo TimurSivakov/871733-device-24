@@ -18,7 +18,7 @@
           <ul class="user-navigation list-style behavior">
             <li>
               <form class="search" action="https://echo.htmlacademy.ru" method="post">
-                <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" required>
+                <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
                 <button type="submit" class="search-button">Найти</button>
               </form>
             </li>
@@ -63,7 +63,6 @@
     <main>
       <div class="container">
         <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-
 
         <section class="slider">
           <div class="slider-container">
@@ -200,10 +199,10 @@
         <section class="our-partners">
           <h2 class="visually-hidden">Наши Партнеры</h2>
           <ul class="partners-flex">
-            <li><a href="dji.com">dji</a></li>
-            <li><a href="sp-gadjets.com">sp gadjets</a></li>
-            <li><a href="go-pro.com">go pro</a></li>
-            <li><a href="vive.com">vive</a></li>
+            <li><a href="dji.com" title="dji"></a></li>
+            <li><a href="sp-gadjets.com" title="sp gadjets"></a></li>
+            <li><a href="go-pro.com" title="go pro"></a></li>
+            <li><a href="vive.com" title="vive"></a></li>
           </ul>
         </section>
 
@@ -254,22 +253,18 @@
               <li><a href="warranty.html">Гарантия</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <address class="address">
-              <span>г. Москва, ул. Строителей, 15</span>
-            </address>
-            <address class="address phone">
-              <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-            </address>
-            </div>
-          </nav>
-          <div class="footer-social-flex">
-            <ul class="footer-social list-style">
-              <li><a class="social-image" href="facebook.com"><img src="img/fb.svg" width="32" height="32" alt="Ссылка на паблик в Фейсбуке">Фейсбук</a></li>
-              <li><a class="social-image" href="instagram.com"><img src="img/instagram.svg" width="32" height="32" alt="Ссылка на паблик в Инстаграме">Инстаграм</a></li>
-              <li><a class="social-image" href="twitter.com"><img src="img/twitter.svg" width="32" height="32" alt="Ссылка на паблик в Твиттере">Твиттер</a></li>
-            </ul>
-            <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Сссылка на страницу интенсивов">Профессиональный онлайн‑курс HTML и CSS</a>
+            <address class="address">г. Москва, ул. Строителей, 15</address>
+            <a class="address phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </div>
+        </nav>
+        <div class="footer-social-flex">
+          <ul class="footer-social list-style">
+            <li><a class="social-image" href="facebook.com" aria-label="Ссылка на паблик в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Иконка Фейсбук">Фейсбук</a></li>
+            <li><a class="social-image" href="instagram.com" aria-label="Ссылка на паблик в Инстаграм"><img src="img/instagram.svg" width="32" height="32" alt="Иконка Инстаграм">Инстаграм</a></li>
+            <li><a class="social-image" href="twitter.com" aria-label="Ссылка на паблик в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Иконка Твиттер">Твиттер</a></li>
+          </ul>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Сссылка на страницу интенсивов">Профессиональный онлайн‑курс HTML и CSS</a>
+        </div>
       </div>
     </footer>
 
@@ -277,11 +272,11 @@
       <div class="write-us-form-container">
         <p class="write-us-form-item">
           <label for="full-name">Ваше имя:</label><br>
-          <input type="text" name="full-name" placeholder="Имя Фамилия" id="full-name" required>
+          <input type="text" name="full-name" placeholder="Имя Фамилия" id="full-name">
         </p>
         <p class="write-us-form-item">
           <label for="email">Ваш e-mail</label><br>
-          <input type="text" name="email" placeholder="email@example.com" id="email" required>
+          <input type="text" name="email" placeholder="email@example.com" id="email">
         </p>
         <p class="write-us-form-item grow">
           <label for="text">Текст письма</label><br>
@@ -297,6 +292,6 @@
       <button class="close-button" type="button"></button>
     </div>
 
-    <script src="js/min.script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
