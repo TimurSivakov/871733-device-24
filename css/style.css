@@ -655,7 +655,6 @@ input[type="radio"]:focus + label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 72px;
   margin-bottom: 79px;
 }
 
@@ -689,10 +688,14 @@ input[type="radio"]:focus + label {
   position: relative;
 }
 
+.info-section  h2 {
+  padding-top: 72px;
+}
+
 .info-section h2::before {
   content: "";
   position: absolute;
-  top: -52px;
+  top: 20px;
   width: 80px;
   height: 7px;
   background-color: black;
@@ -1324,7 +1327,7 @@ margin-left: 500px;
 
 .sort-items li {
   margin-left: 13px;
-  margin-right: 7px;
+  margin-right: 2px;
 }
 
 .sort-items a {
@@ -1861,8 +1864,8 @@ margin-left: 500px;
 }
 
 .range-of-items {
-  padding-top: 302px;
   margin-bottom: 181px;
+  padding-top: 101px;
 }
 
 .range-of-items-flex {
@@ -1872,14 +1875,17 @@ margin-left: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .range-item {
   max-width: 160px;
-  position: relative;
+  margin-right: 40px;
+}
+
+.range-item:nth-child(6n) {
+  margin-right: 0;
 }
 
 .range-item-heading {
@@ -1891,18 +1897,23 @@ margin-left: 500px;
   width: 160px;
 }
 
-.range-item a {
+.range-item-heading a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  padding-top: 200px;
 }
 
-.range-item a:active {
+.range-item-heading a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .range-item-heading a::before {
   position: absolute;
-  top: -193px;
+  top: 7px;
   content: "";
   width: 160px;
   height: 160px;
@@ -1912,7 +1923,7 @@ margin-left: 500px;
 
 .range-item-heading a::after {
   position: absolute;
-  top: -193px;
+  top: 6px;
   left: 0px;
   content: "";
   width: 160px;
@@ -1937,7 +1948,7 @@ margin-left: 500px;
 .range-item:nth-child(5) a::after {
   background-image: url("../img/popular-5.svg");
 }
-.range-item:nth-child(6) a::before {
+.range-item:nth-child(6) a::after {
   background-image: url("../img/popular-6.svg");
 }
 .range-item-heading a:hover::before {
@@ -1971,31 +1982,29 @@ margin-left: 500px;
   font-size: 0;
 }
 
-.partners-flex li {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  opacity: 0.2;
+.dji {
+  background-image: url("../img/logo-1.jpg");
+}
+.sp-gadjets {
+  background-image: url("../img/logo-3.jpg");
+}
+.go-pro {
+  background-image: url("../img/logo-2.jpg");
+}
+.vive {
+  background-image: url("../img/logo-4.jpg");
 }
 
-.partners-flex li:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  opacity: 1;
-}
-
-.partners-flex li:first-child {
+.dji:hover {
   background-image: url("../img/logo-1-color.jpg");
 }
-
-.partners-flex li:nth-child(2) {
+.sp-gadjets:hover {
   background-image: url("../img/logo-3-color.jpg");
 }
-
-.partners-flex li:nth-child(3) {
+.go-pro:hover {
   background-image: url("../img/logo-2-color.jpg");
 }
-
-.partners-flex li:last-child {
+.vive:hover {
   background-image: url("../img/logo-4-color.jpg");
 }
 
